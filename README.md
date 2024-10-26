@@ -18,12 +18,14 @@ This project demonstrates foundational machine learning system optimization, foc
 1. **Install Python dependencies**:
    ```bash
    pip install -r requirements.txt
-
+   
+2. **Build C++ Extension**:
  ```bash cd cpp_extension
 mkdir build && cd build
 cmake ..
 make
 
+3. **Usage**:
  ```bash from src.data_loader import load_data
 from src.performance_nn import PerformanceOptimizedNN
 
@@ -34,7 +36,8 @@ X, y = load_data()
 model = PerformanceOptimizedNN([20, 15, 10, 5])
 model.train(X, y, epochs=10, learning_rate=0.01)
 
-Results
+# Results
+
 Metric	Value
 Memory Usage	4.2 MB
 Training Time	2.5 seconds
