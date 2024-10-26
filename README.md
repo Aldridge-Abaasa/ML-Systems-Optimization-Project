@@ -13,6 +13,12 @@ This project demonstrates foundational machine learning system optimization, foc
 - ReLU Activation Optimization: Vectorized ReLU function for faster gradient calculation.
 - Performance Profiling: Built-in utilities to track memory usage, forward/backward pass time, and layer-specific performance.
 
+## Results
+
+Metric	Value
+Memory Usage	4.2 MB
+Training Time	2.5 seconds
+
 ## Setup
 
 1. **Install Python dependencies**:
@@ -39,11 +45,4 @@ X, y = load_data()
 model = PerformanceOptimizedNN([20, 15, 10, 5])
 model.train(X, y, epochs=10, learning_rate=0.01)
 
-
-
-## Results
-
-Metric	Value
-Memory Usage	4.2 MB
-Training Time	2.5 seconds
 
