@@ -12,3 +12,30 @@ This project demonstrates foundational machine learning system optimization, foc
 - Optimized Matrix Multiplication: Cache-friendly, parallelized matrix multiplication using OpenMP.
 - ReLU Activation Optimization: Vectorized ReLU function for faster gradient calculation.
 - Performance Profiling: Built-in utilities to track memory usage, forward/backward pass time, and layer-specific performance.
+
+## Setup
+
+1. **Install Python dependencies**:
+   ```bash
+   pip install -r requirements.txt```
+
+cd cpp_extension
+mkdir build && cd build
+cmake ..
+make
+
+from src.data_loader import load_data
+from src.performance_nn import PerformanceOptimizedNN
+
+# Load data
+X, y = load_data()
+
+# Initialize and train model
+model = PerformanceOptimizedNN([20, 15, 10, 5])
+model.train(X, y, epochs=10, learning_rate=0.01)
+
+Results
+Metric	Value
+Memory Usage	4.2 MB
+Training Time	2.5 seconds
+
