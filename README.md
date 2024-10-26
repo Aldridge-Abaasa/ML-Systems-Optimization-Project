@@ -17,14 +17,14 @@ This project demonstrates foundational machine learning system optimization, foc
 
 1. **Install Python dependencies**:
    ```bash
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
 
-cd cpp_extension
+ ```bash cd cpp_extension
 mkdir build && cd build
 cmake ..
 make
 
-from src.data_loader import load_data
+ ```bash from src.data_loader import load_data
 from src.performance_nn import PerformanceOptimizedNN
 
 # Load data
